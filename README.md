@@ -35,7 +35,13 @@ cd lede/
 
 ```shell
 make menuconfig
+
+     Target System (MediaTek Ralink MIPS)  --->                                                  │ │   
+     Subtarget (MT7628 based boards)  --->                                                       │ │   
+     Target Profile (Default Profile)  --->                                                      │ │                       
 ```
+
+
 
 1. 你需要选择你的目标硬件平台`Target System`
 2. 在`> Network > Captive Portals`中选定`< > apfree_wifidog`
@@ -51,7 +57,9 @@ make menuconfig
 make -j4 V=s
 ```
 
-编译完成之后目标文件在`./bin/packages/$targets/base`
+编译完成之后目标文件在`./bin/packages/mipsel_24kc/base/apfree_wifidog_2.10.1437-1_mipsel_24kc.ipk`
+
+也可以采用如下的方式找到编译完成的包
 
 ```shell
 #列出目录以及文件
