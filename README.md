@@ -67,10 +67,13 @@ tree ./bin/
 #查找apfree
 find ./bin/ | grep apfree
 ```
-## 联系我们
-[331230369](https://jq.qq.com/?_wv=1027&k=4ADDSev)
 
 ## 感谢
 感谢 @Echowxsy 提供的编译教材，该教程在其基础上完成
+
+## 联系我们
+[331230369](https://jq.qq.com/?_wv=1027&k=4ADDSev)
+
+
 
 ### 如果您觉得我们的开源对您有帮助，请不要犹豫 star
