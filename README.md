@@ -10,25 +10,21 @@ git clone https://github.com/KunTengRom/kunteng-lede-17.01.4.git lede
 cd lede
 #返回上级目录
 cd ..
-#下载apfree_wifidog源码
-git clone https://github.com/KunTengRom/package_apfree_wifidog.git 
-#将apfree的packag复制到lede目录下
-cp -r package_apfree_wifidog/apfree_wifidog lede/package/
-#替换LEDE编译环境的libevent2
-git clone https://github.com/KunTengRom/package_kunteng_libevent2.git
-cp -fr package_kunteng_libevent2/libevent2 ~/lede/package/libs/
 #进入lede目录
 cd lede/
 ```
 
-### 更新包
-
-```shell
-#更新最新的包定义
-./scripts/feeds update
-#安装所有的包
-./scripts/feeds install -a
+### 安装依赖
+如果遇到如下问题，则需要安装编译依赖包
 ```
+Build dependency: Please install the GNU C++ Compiler (g++)
+Build dependency: Please reinstall the GNU C++ Compiler - it appears to be broken
+Build dependency: Please install ncurses. (Missing libncurses.so or ncurses.h)
+Build dependency: Please install a static zlib. (Missing libz.a or zlib.h)
+```
+
+sudo apt-get install g++ unzip libncurses5-dev zlib1g-dev -y
+
 
 ### 编译配置
 
