@@ -6,9 +6,8 @@
 #使用主目录
 cd ~
 #从GitHub拉取lede代码，放在lede目录下
-git clone https://github.com/lede-project/source.git lede
+git clone https://github.com/liudf0716/kunteng-lede-17.01.4.git lede
 cd lede
-git checkout -b v17.01.4 v17.01.4
 #返回上级目录
 cd ..
 #下载apfree_wifidog源码
