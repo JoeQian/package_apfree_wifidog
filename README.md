@@ -41,7 +41,7 @@ make menuconfig
 
 
 1. 你需要选择你的目标硬件平台`Target System`
-2. 在`> Network > Captive Portals`中选定`< > apfree_wifidog`
+2. 在`> Network > Captive Portals`中选定`< > apfree-wifidog`
 3. 按两下空格变`<*> apfree_wifidog`
 4. 选择`< Save >`保存配置文件
 5. 按两次`ESC`退出
